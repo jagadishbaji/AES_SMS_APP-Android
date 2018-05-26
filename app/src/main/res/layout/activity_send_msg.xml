@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/andi"
+
+    tools:context="com.example.jagadish.smsapp.sendMsg"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="To : +91"
+        android:layout_height="wrap_content"
+        android:textColor="@color/abc_btn_colored_text_material"
+        android:textSize="@dimen/abc_action_button_min_width_overflow_material"
+        android:textStyle="normal|bold" />
+
+    <EditText
+
+        android:id="@+id/txt_mobile"
+        android:inputType="phone"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginTop="15dp"
+
+        android:layout_marginBottom="20dp"
+
+        android:layout_marginRight="15dp"
+
+        android:layout_centerVertical="true"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:ellipsize="start"
+
+        android:gravity="center"
+
+        android:hint="Mobile Number"
+
+
+
+        android:background="@drawable/edittext"
+        android:layout_weight="0.15" /> />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message :"
+        android:textColor="@color/abc_btn_colored_text_material"
+        android:textSize="@dimen/abc_action_button_min_width_overflow_material"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textLongMessage"
+        android:id="@+id/txt_msg"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginTop="15dp"
+
+        android:layout_marginBottom="20dp"
+
+        android:layout_marginRight="15dp"
+
+        android:layout_centerVertical="true"
+
+
+        android:ellipsize="start"
+
+        android:gravity="center"
+
+        android:hint="Type here..."
+
+
+
+        android:background="@drawable/edittext"
+        android:layout_weight="0.15" />
+
+
+    <TextView
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:text="Encrypted Data :"
+        android:textStyle="normal|bold"
+        android:textSize="@dimen/abc_action_button_min_width_overflow_material"
+        android:textColor="@color/abc_btn_colored_text_material" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_enc"
+        android:textSize="30dp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_green_dark" />
+
+
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Secure"
+        android:id="@+id/send"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="0.07" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Clear"
+        android:id="@+id/clear_btn"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="0.07" />
+</LinearLayout>

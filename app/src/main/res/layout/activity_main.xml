@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/andi"
+
+    tools:context="com.example.jagadish.smsapp.MainActivity">
+
+
+<ImageView
+    android:layout_width="350dp"
+    android:layout_height="199dp"
+    android:src="@drawable/sms"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send SMS"
+            android:id="@+id/send"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Send And Read Messages"
+            android:id="@+id/textView"
+            android:layout_above="@id/send"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@string/abc_action_bar_home_description"
+            android:textColor="@color/abc_secondary_text_material_dark"
+            android:textSize="@dimen/abc_action_button_min_width_overflow_material"
+            android:textStyle="normal|bold" />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Read SMS"
+            android:id="@+id/Read"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/send"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
